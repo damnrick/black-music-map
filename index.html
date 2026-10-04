@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0a0a0c">
+<title>黑色流行音乐发展地图 1940s–2026 · R&B / Soul / Funk / Hip-Hop / Jazz / Gospel / Neo-Soul</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23ff9f0a'/%3E%3Cpath%20d='M26%2046V20l16-3.5V38'%20stroke='white'%20stroke-width='4.5'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3E%3Ccircle%20cx='21.5'%20cy='46'%20r='5'%20fill='white'/%3E%3Ccircle%20cx='37.5'%20cy='40.5'%20r='5'%20fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+<div class="app">
+
+  <!-- 侧边栏（桌面 macOS 风格 / 移动端自动变为 iOS 顶栏） -->
+  <aside class="sidebar">
+    <div class="traffic" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="brand">
+      <div class="brand-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 18.2V6.6l9-1.9v11.4"/><circle cx="7.2" cy="18.2" r="2.3" fill="#fff" stroke="none"/><circle cx="16.2" cy="16.1" r="2.3" fill="#fff" stroke="none"/></svg>
+      </div>
+      <div class="brand-text">
+        <h1>黑色流行音乐发展地图 <span class="years">1940s–2026</span></h1>
+        <p class="subtitle">R&B · Soul · Funk · Hip-Hop · Jazz · Gospel · Neo-Soul —— 影响关系 · 制作技术 · 和声节奏 · 采样与录音</p>
+      </div>
+    </div>
+
+    <nav class="tabs" id="tabs">
+      <button data-view="overview" class="active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="7.5" height="7.5" rx="2"/><rect x="13" y="13" width="7.5" height="7.5" rx="2"/></svg>
+        <span>总览·流派演进</span>
+      </button>
+      <button data-view="artists">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 19.5c1-3.4 3.5-5.1 6.5-5.1s5.5 1.7 6.5 5.1"/></svg>
+        <span>音乐人</span>
+      </button>
+      <button data-view="albums">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.2"/><circle cx="12" cy="12" r="2.4"/></svg>
+        <span>专辑分析</span>
+      </button>
+      <button data-view="tracks">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 18V6.5l9-1.9v11.2"/><circle cx="7.2" cy="18" r="2.4"/><circle cx="16.2" cy="15.8" r="2.4"/></svg>
+        <span>关键作品</span>
+      </button>
+      <button data-view="graph">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="6" r="2.1"/><circle cx="18.5" cy="6" r="2.1"/><circle cx="12" cy="18" r="2.1"/><path d="M7 7.4l3.9 8.4M17 7.4l-3.9 8.4M7.6 6h8.8"/></svg>
+        <span>影响图谱</span>
+      </button>
+      <button data-view="routes">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6" r="1.2" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.2" fill="currentColor" stroke="none"/><circle cx="5" cy="18" r="1.2" fill="currentColor" stroke="none"/><path d="M9 6h10.5M9 12h10.5M9 18h10.5"/></svg>
+        <span>听歌路线</span>
+      </button>
+      <button data-view="tech">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 4v16M12 4v16M18.5 4v16"/><circle cx="5.5" cy="9.5" r="2.2" fill="currentColor" stroke="none"/><circle cx="12" cy="14.5" r="2.2" fill="currentColor" stroke="none"/><circle cx="18.5" cy="7.5" r="2.2" fill="currentColor" stroke="none"/></svg>
+        <span>技术演进</span>
+      </button>
+      <button data-view="schema">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.8" rx="7" ry="2.6"/><path d="M5 5.8v12.4c0 1.45 3.1 2.6 7 2.6s7-1.15 7-2.6V5.8"/><path d="M5 12c0 1.45 3.1 2.6 7 2.6s7-1.15 7-2.6"/></svg>
+        <span>数据库结构</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-foot">全部内容离线可用</div>
+  </aside>
+
+  <!-- 内容区 -->
+  <div class="content">
+    <section class="stats-bar" id="statsBar"></section>
+
+    <main id="main">
+      <!-- 总览 -->
+      <section class="view active" id="view-overview">
+        <div class="panel">
+          <h2>主干影响链：Gospel → Soul → Funk → Hip-Hop → Neo-Soul</h2>
+          <p class="lead">这张地图的核心论点：今天的 R&B、Funk、Hip-Hop 与 Neo-Soul 共享同一条根系——黑人教会的福音音乐。福音的呼喊式演唱与呼应（call-and-response）进入世俗酒馆成为 Soul；Soul 的节奏重心前移、切分加剧成为 Funk；Funk 的鼓间奏（breakbeat）在布朗克斯街区派对上被 DJ 循环，催生 Hip-Hop；而 1990 年代末，一批说唱时代长大的音乐人用嘻哈的节拍审美重组 1970 年代的灵魂乐与爵士，诞生 Neo-Soul。Jazz 则在每个节点提供和声语言与即兴精神。</p>
+          <div id="flowChain" class="flow-chain"></div>
+        </div>
+        <div class="panel">
+          <h2>按年代浏览</h2>
+          <div id="eraGrid" class="era-grid"></div>
+        </div>
+        <div class="panel">
+          <h2>按流派浏览</h2>
+          <div id="genreGrid" class="genre-grid"></div>
+        </div>
+        <div class="panel">
+          <h2>按地区浏览</h2>
+          <div id="regionGrid" class="region-grid"></div>
+        </div>
+      </section>
+
+      <!-- 音乐人 -->
+      <section class="view" id="view-artists">
+        <div class="filters" id="artistFilters">
+          <input type="search" id="artistSearch" placeholder="搜索音乐人 / 乐队…">
+          <select id="artistEra"><option value="">全部年代</option></select>
+          <select id="artistGenre"><option value="">全部流派</option></select>
+          <select id="artistRegion"><option value="">全部地区</option></select>
+          <span class="count-label" id="artistCount"></span>
+        </div>
+        <div class="card-grid" id="artistList"></div>
+      </section>
+
+      <!-- 专辑 -->
+      <section class="view" id="view-albums">
+        <div class="filters" id="albumFilters">
+          <input type="search" id="albumSearch" placeholder="搜索专辑 / 音乐人…">
+          <select id="albumEra"><option value="">全部年代</option></select>
+          <select id="albumGenre"><option value="">全部流派</option></select>
+          <select id="albumRating"><option value="">全部</option><option value="essential">里程碑级</option></select>
+          <span class="count-label" id="albumCount"></span>
+        </div>
+        <div class="album-list" id="albumList"></div>
+      </section>
+
+      <!-- 曲目 -->
+      <section class="view" id="view-tracks">
+        <div class="filters" id="trackFilters">
+          <input type="search" id="trackSearch" placeholder="搜索曲目 / 音乐人…">
+          <select id="trackEra"><option value="">全部年代</option></select>
+          <select id="trackGenre"><option value="">全部流派</option></select>
+          <label class="chk"><input type="checkbox" id="trackSampled"> 仅看被大量采样的作品</label>
+          <span class="count-label" id="trackCount"></span>
+        </div>
+        <div class="track-list" id="trackList"></div>
+      </section>
+
+      <!-- 影响图谱 -->
+      <section class="view" id="view-graph">
+        <div class="panel">
+          <h2>影响关系图谱</h2>
+          <p class="lead">选择一位音乐人，查看 TA 受谁影响、又影响了谁；专辑页与曲目页另有“喜欢 A 听 B”与采样关系。节点颜色代表流派，连线方向为「影响 → 被影响」。</p>
+          <div class="graph-controls">
+            <input type="search" id="graphSearch" list="graphDatalist" placeholder="输入音乐人姓名定位…">
+            <datalist id="graphDatalist"></datalist>
+            <button id="graphReset" class="btn">重置</button>
+            <span class="hint">提示：也可直接点击任意节点。</span>
+          </div>
+          <div class="graph-wrap">
+            <svg id="graphSvg" viewBox="0 0 1000 640" preserveAspectRatio="xMidYMid meet"></svg>
+            <div class="graph-side" id="graphSide"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 听歌路线 -->
+      <section class="view" id="view-routes">
+        <div class="panel">
+          <h2>10 条从入门到深入的听歌路线</h2>
+          <p class="lead">每条路线分三个阶段：<b>入门</b>（最易进入、最具代表性）→ <b>进阶</b>（拓展版图）→ <b>深入</b>（源头与硬核）。点击专辑可直接跳转分析。</p>
+          <div id="routeList" class="route-list"></div>
+        </div>
+      </section>
+
+      <!-- 技术演进 -->
+      <section class="view" id="view-tech">
+        <div class="panel">
+          <h2>制作技术 · 录音技术 · 和声 · 节奏 · 采样 · 演唱方式 演进时间线</h2>
+          <div id="techTimeline" class="tech-timeline"></div>
+        </div>
+      </section>
+
+      <!-- 数据库结构 -->
+      <section class="view" id="view-schema">
+        <div class="panel">
+          <h2>数据库结构设计（按年代 / 流派 / 地区 / 影响关系组织）</h2>
+          <div id="schemaContent"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>数据规模：<span id="footStats"></span> · 全部内容离线可用 · 专辑分析为原创乐评文字，事实信息（年份/厂牌/地区）按每 50 位音乐人分批核查</p>
+    </footer>
+  </div>
+</div>
+
+<!-- 详情弹层（桌面居中浮层 / 移动端 iOS 底部抽屉） -->
+<div class="modal" id="modal">
+  <div class="modal-box" id="modalBox"></div>
+</div>
+
+<script src="js/data/1940s_1950s.js"></script>
+<script src="js/data/1950s_rnb.js"></script>
+<script src="js/data/1960s.js"></script>
+<script src="js/data/1960s_soul.js"></script>
+<script src="js/data/1970s.js"></script>
+<script src="js/data/1970s_jazz_disco.js"></script>
+<script src="js/data/1980s.js"></script>
+<script src="js/data/1980s_regional.js"></script>
+<script src="js/data/1980s_rnb.js"></script>
+<script src="js/data/1990s.js"></script>
+<script src="js/data/1990s_hiphop.js"></script>
+<script src="js/data/1990s_rnb.js"></script>
+<script src="js/data/2000s.js"></script>
+<script src="js/data/2010s.js"></script>
+<script src="js/data/2010s_rnb.js"></script>
+<script src="js/data/2020s.js"></script>
+<script src="js/data/routes.js"></script>
+<script src="js/data/tech.js"></script>
+<script src="js/image-manifest.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
